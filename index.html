@@ -3,7 +3,8 @@
 <html lang="en">
 
   <head>
-    <title>HTML5/CSS3 Responsive Theme</title>
+    <title>User Management</title>
+    <link rel="icon" href="img/school_logo.png">
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -12,35 +13,41 @@
 
   <body class="body">
 
-    <header class="mainHeader">
+    <div class="mainHeader">
       <img src="img/logo.png">
 
       <nav><ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">My Account</a></li>
+        <li><a href="#">Students</a></li>
+        <li><a href="#">Requests</a></li>
       </ul></nav>
-    </header>
+    </div>
 
     <div class="mainContent">
       <div class="content">
 
-        <article class="topcontent">
-          <header>
-            <h2><a href="#" title="First post">First Post</a></h2>
-          </header>
+        <div class="account-section">
 
-          <footer>
-            <p class="post-info">This is post is written by Christian</p>
-          </footer>
+          <div class="account-namebar">  <!--Name Bar is uniquely different from other account items-->
+            <div class="account-photo">
+              <img src="img/avatar.png">
+              <span class="change-link"><a href="#">Change</a></span>
+            </div>
 
-          <content>
-            <p>It does not matter how slowly you go as long as you do not stop.</p>
-            <p>The will to win, the desire to succeed, the urge to reach your full potential...
-               these are the keys that will unlock the door to personal excellence.</p>
-          </content>
-        </article>
+            <div class="account-namebar-nameinfo">
+              <span class="display-name">Anita Smith</span>
+              <span class="change-link"><a href="#">Change</a></span>
+            </div>
+          </div>
+
+          <div class="account-item">
+            <span class="account-item-label">First</span>
+            <span class="account-item-info">Anita</span>
+            <span class="change-link"><a href="#">Change</a></span>
+          </div>
+
+        </div>
 
         <article class="bottomcontent">
           <header>
