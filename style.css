@@ -87,13 +87,15 @@ a:hover, a:active {
   float: left;
 }
 
+/********** ACCOUNT SECTION **********/
+
 .account-section {
   background-color: #CCCCCC;
 /*  border-radius: 5px;  curves corners of borders
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;*/
   margin-top: 2%;
-  height: 200px;
+  height: 240px;
   border: solid;
   border-color: #800000;
 }
@@ -104,9 +106,12 @@ a:hover, a:active {
   color: #0000FF;
   border-bottom: 1px dotted #0000FF;
 }
+
+/********** ACCOUNT NAME BAR **********/
+
 .account-section .account-namebar {
-  padding: 2% 0;
-  height: 65px;
+  padding: 2% 0 0 0;
+  height: 73px;
 }
 .account-section .account-namebar .account-photo {
   float: left;
@@ -130,7 +135,7 @@ a:hover, a:active {
   background-color: #800000;
   border-top: solid;
   border-bottom: solid;
-  border-color: #800000;
+  border-color: #000000;
 }
 .account-section .account-namebar .account-namebar-nameinfo .display-name {
   float: left;
@@ -142,84 +147,31 @@ a:hover, a:active {
   float: right;
   padding: 12px 10% 0 0;
 }
+
+/********** ACCOUNT ITEMS **********/
+
 .account-section .account-info {
   float: left;
+  padding-left: 4%;
+  width: 65%;
 }
-
-.bottomcontent {
-  background-color: #FFF;
-/*  border-radius: 5px;  curves corners of borders
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;*/
-  padding: 3% 5%;
-  margin-top: 2%;
+.account-section .account-info .account-info-item {
+  background-color: #800000;
+  border-bottom: solid;
+  border-left: solid;
+  border-right: solid;
+  border-radius: 5px;
 }
-
-.top-sidebar {
-  width: 21%;
+.account-section .account-info .account-info-item .account-info-item-label {
   float: left;
-  background-color: #FFF;
-/*  border-radius: 5px;  curves corners of borders
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;*/
-  margin: 2% 0 2% 3%; /* top right bottom left (clockwise) */
-  padding: 2% 3%;
+  color: #808080;
+  padding: 0 0 0 3%;
+  width: 25%;
+  font-size: 15px;
 }
-
-.post-info {
-  font-style: italic;
-  color: #999;
-  font-size: 90%;
-}
-
-.middle-sidebar {
-  width: 21%;
+.account-section .account-info .account-info-item .account-info-item-value {
   float: left;
-  background-color: #FFF;
-/*  border-radius: 5px;  curves corners of borders
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;*/
-  margin-left: 3%;
-  margin-bottom: 2%;
-  padding: 2% 3%;
-}
-
-.bottom-sidebar {
-  width: 21%;
-  float: left;
-  background-color: #FFF;
-/*  border-radius: 5px;  curves corners of borders
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;*/
-  margin-left: 3%;
-  margin-bottom: 2%;
-  padding: 2% 3%;
-}
-
-.mainFooter {
-  width: 100%;
-  height: 40px;
-  float: left;
-/*  border-radius: 5px;  curves corners of borders
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;*/
-  background-color: #666;
-  margin: 2% 0; /* top_bottom left_right */
-}
-
-.mainFooter p {
-  width: 92%;
-  margin: 10px auto;
-  color: #FFF;
-}
-
-@media only screen and (min-width: 150px) and (max-width: 600px) {
-
-  .body {
-    width: 90%; /* width was 100%, so make 70% container */
-    font-size: 95%;
-  }
-
-  .mainHeader
-
+  color: #FFFFFF;
+  width: 50%;
+  font-size: 15px;
 }
