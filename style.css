@@ -31,7 +31,7 @@ a:hover, a:active {
 .mainHeader nav, .mainContent, .account-section,
 .bottomcontent, .top-sidebar, .middle-sidebar, .bottom-sidebar,
 .mainFooter {
-  border-radius: 5px;  curves corners of borders
+  border-radius: 5px;  /* curves corners of borders */
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
@@ -90,7 +90,7 @@ a:hover, a:active {
 /********** ACCOUNT SECTION **********/
 
 .account-section {
-  background-color: #CCCCCC;
+  background-color: #101010;
 /*  border-radius: 5px;  curves corners of borders
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;*/
