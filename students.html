@@ -3,36 +3,45 @@
 <html lang="en">
 
   <head>
-    <title>User Management</title>
+    <title>User Management - Students</title>
     <link rel="icon" href="img/school_logo.png">
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="topbarstyle.css" type="text/css" />
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />   <!--used to say that this is a responsive websites-->
   </head>
 
   <body class="body">
 
-    <div class="mainHeader">
+    <div class="main-header">
       <img src="img/logo.png">
 
       <nav><ul>
         <li><a href="#">Home</a></li>
-        <li class="active"><a href="#">My Account</a></li>
-        <li><a href="#">Students</a></li>
+        <li><a href="index.html">My Account</a></li>
+        <li class="active"><a href="#">Students</a></li>
         <li><a href="#">Requests</a></li>
       </ul></nav>
     </div>
 
-    <div class="mainContent">
-      <div class="content">
+    <div class="all-content">
+      <div class="left-content">
 
-        <div class="account-section">
+        <div class="list-section">
 
-          <div class="account-namebar">  <!--Name Bar is uniquely different from other account items-->
-            <div class="account-photo">
-              <img src="img/avatar.png">
-              <span class="change-link"><a href="#">Change</a></span>
+          <div class="top-bar">  <!--TOP BAR for SELECT ALL, SEARCH, and NUMBER STUDENTS -->
+            <div class="select-all">
+              <form>
+                <input type="checkbox" name="control" value="selectall">Select All
+              </form>
+            </div>
+            <div class="search">
+              <img src="img/search-icon.png">
+              <span class="search-label">Search</span>
+            </div>
+            <span class="counter">3 Students Enrolled</span>
+
             </div>
 
             <div class="account-namebar-nameinfo">
@@ -40,9 +49,9 @@
               <span class="change-link"><a href="#">Change</a></span>
             </div>
           </div>
-
-          <div class="account-info">
-            <div class="account-info-item">
+<!--
+          <div class="account-info"> <! STUDENTS LISTING begins here -->
+<!--            <div class="account-info-item">
               <span class="account-info-item-label">First</span>
               <span class="account-info-item-value">Anita</span>
               <span class="change-link"><a href="#">Change</a></span>
@@ -65,7 +74,7 @@
               <span class="account-info-item-value">********</span>
               <span class="change-link"><a href="#">Change</a></span>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
