@@ -28,9 +28,10 @@ a:hover, a:active {
   margin: 2% 0;
 }
 
+/* curved borders */
 .main-header nav, .all-content, .account-section,
-.bottomcontent, .top-sidebar, .middle-sidebar, .bottom-sidebar,
-.mainFooter {
+.bottomcontent, .actions-section, .middle-sidebar, .bottom-sidebar,
+.mainFooter, .list-section {
   border-radius: 5px;  /* curves corners of borders */
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -77,25 +78,28 @@ a:hover, a:active {
 
 .all-content {
   line-height: 25px;
+  overflow: auto;
 /*  border-radius: 5px;  curves corners of borders
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;*/
 }
 
 .left-content {
-  width: 70%;
+  width: 69%;
   float: left;
+}
+
+.right-content {
+  width: 29%;
+  float: right;
 }
 
 /********** ACCOUNT SECTION **********/
 
 .account-section {
+  overflow: auto; /* height will adjust according to children */
   background-color: #101010;
-/*  border-radius: 5px;  curves corners of borders
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;*/
   margin-top: 2%;
-  height: 240px;
   border: solid;
   border-color: #800000;
 }
@@ -154,6 +158,7 @@ a:hover, a:active {
   float: left;
   padding-left: 4%;
   width: 65%;
+  margin-bottom: 2%;
 }
 .account-section .account-info .account-info-item {
   background-color: #800000;
@@ -174,4 +179,20 @@ a:hover, a:active {
   color: #FFFFFF;
   width: 50%;
   font-size: 15px;
+}
+
+.list-section { /* for lists like in students page and requests page */
+  overflow: auto;
+  background-color: #101010;
+  border: solid;
+  border-color: #800000;
+  margin-top: 10px;
+}
+
+.actions-section { /* mainly used to style actions section */
+  overflow: auto;
+  background-color: #101010;
+  border: solid;
+  border-color: #800000;
+  margin-top: 10px;
 }
