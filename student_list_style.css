@@ -15,7 +15,7 @@
   border-color: #000000;
 }
 .list-section .student-list .student-list-item form {
-float: left;
+  float: left;
 }
 .list-section .student-list .student-list-item .student-list-item-info {
   height: inherit;

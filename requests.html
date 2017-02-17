@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="top_bar_style.css" type="text/css" />
-    <link rel="stylesheet" href="student_list_style.css" type="text/css" />
+    <link rel="stylesheet" href="requests_list_style.css" type="text/css" />
     <link rel="stylesheet" href="actions_section_style.css" type="text/css" />
 
     <meta name="viewport" content="width=device-width, inital-scale=1.0" />   <!--used to say that this is a responsive websites-->
@@ -23,8 +23,8 @@
       <nav><ul>
         <li><a href="#">Home</a></li>
         <li><a href="index.html">My Account</a></li>
-        <li class="active"><a href="#">Students</a></li>
-        <li><a href="#">Requests</a></li>
+        <li><a href="students.html">Students</a></li>
+        <li class="active"><a href="#">Requests</a></li>
       </ul></nav>
     </div>
 
@@ -43,41 +43,42 @@
               <img src="img/search-icon2.png">
               <input class="search-input" type="search" id="query" placeholder="Search...">
             </div>
-            <span class="counter">3 Students Enrolled</span>
+            <span class="counter">2 Requests Pending</span>
           </div> <!-- END of TOP-BAR -->
 
-        <div class="student-list"> <!-- START of STUDENT-LIST -->
-          <div class="student-list-item">
+        <div class="requests-list"> <!-- START of REQUEST-LIST -->
+          <div class="requests-list-item">
             <form>
               <input type="checkbox" name="control" value="select">
             </form>
-            <div class="student-list-item-info">
-              <img src="img/avatar.png">
-              <span class="student-list-item-info-last">Jiggins,</span>
-              <span class="student-list-item-info-first">Hilda</span>
+            <div class="requests-list-item-info">
+              <div class="requests-list-item-info-left">
+                <img src="img/avatar.png">
+                <div class="requests-list-item-info-name">
+                  <span class="requests-list-item-info-last">Si,</span>
+                  <span class="requests-list-item-info-first">Fatima</span>
+                  <br>
+                  <span class="requests-list-item-info-email">sifatima@gmail.com</span>
+                </div>
+              </div>
+              <div class="requests-list-item-info-right">
+                <span class="requests-list-item-info-type-label">Request Type</span>
+                <br>
+                <span class="requests-list-item-info-type">Photo Change</span>
+              </div>
             </div>
           </div>
-            <div class="student-list-item">
+            <div class="requests-list-item">
               <form>
                 <input type="checkbox" name="control" value="select">
               </form>
-              <div class="student-list-item-info">
+              <div class="requests-list-item-info">
                 <img src="img/avatar.png">
-                <span class="student-list-item-info-last">Marley,</span>
-                <span class="student-list-item-info-first">Bob</span>
+                <span class="requests-list-item-info-last">Marley,</span>
+                <span class="requests-list-item-info-first">Bob</span>
               </div>
             </div>
-              <div class="student-list-item">
-                <form>
-                  <input type="checkbox" name="control" value="select">
-                </form>
-                <div class="student-list-item-info">
-                  <img src="img/avatar.png">
-                  <span class="student-list-item-info-last">Si,</span>
-                  <span class="student-list-item-info-first">Fatima</span>
-                </div>
-              </div>
-        </div> <!-- END of STUDENT-LIST -->
+        </div> <!-- END of REQUEST-LIST -->
       </div> <!-- END of LIST-SECTION -->
     </div> <!-- END of lEFT-CONTENT -->
 
