@@ -22,7 +22,7 @@
 
       <nav><ul>
         <li><a href="#">Home</a></li>
-        <li><a href="index.html">My Account</a></li>
+        <li><a href="myaccount.html">My Account</a></li>
         <li><a href="students.html">Students</a></li>
         <li class="active"><a href="#">Requests</a></li>
       </ul></nav>
@@ -73,9 +73,20 @@
                 <input type="checkbox" name="control" value="select">
               </form>
               <div class="requests-list-item-info">
-                <img src="img/avatar.png">
-                <span class="requests-list-item-info-last">Marley,</span>
-                <span class="requests-list-item-info-first">Bob</span>
+                <div class="requests-list-item-info-left">
+                  <img src="img/avatar.png">
+                  <div class="requests-list-item-info-name">
+                    <span class="requests-list-item-info-last">Marley,</span>
+                    <span class="requests-list-item-info-first">Bob</span>
+                    <br>
+                    <span class="requests-list-item-info-email">marleybob@gmail.com</span>
+                  </div>
+                </div>
+                <div class="requests-list-item-info-right">
+                  <span class="requests-list-item-info-type-label">Request Type</span>
+                  <br>
+                  <span class="requests-list-item-info-type">Account Creation</span>
+                </div>
               </div>
             </div>
         </div> <!-- END of REQUEST-LIST -->
@@ -89,16 +100,10 @@
         </div>
         <ul class="actions-section-links">
           <li><a href="#">View</a></li>
-          <li><a href="#">Remove</a></li>
-          <li><a href="#">Email</a></li>
-          <li><a href="#">Reset Password</a></li>
+          <li><a href="#">Reject</a></li>
+          <li><a href="#">Approve</a></li>
         </ul>
     </div> <!-- END of RIGHT-CONTENT -->
-
-    <footer class="mainFooter">
-      <p>Copyright &copy; <a href="#" title="1stwebdesigner">1stwebdesigner.com</a></p>
-    </footer>
-
   </div> <!-- END of ALL-CONTENT -->
 
   </body>

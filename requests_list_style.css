@@ -35,6 +35,7 @@
 }
 .requests-list-item-info-name {
   float: left;
+  margin: 10px 0 0 5px;
 }
 .requests-list-item-info-email,
 .requests-list-item-info-last,
@@ -49,7 +50,7 @@
   width: 30%;
   height: inherit;
   float: right;
-  margin: 1% 1% 0 0;
+  margin: 10px 10px 0 0;
 }
 .requests-list-item-info-type-label,
 .requests-list-item-info-type {
