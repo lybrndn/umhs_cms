@@ -1,3 +1,10 @@
+.main-content {
+  float: right;
+}
+.side-content { /* actions section on left side more convenient */
+  float: left;
+}
+
 .list-section .requests-list {
   margin-bottom: 2%;
 }

@@ -1,3 +1,10 @@
+.actions-section { /* mainly used to style actions section */
+  overflow: auto;
+  background-color: #101010;
+  border: solid;
+  border-color: #800000;
+  margin-top: 10px;
+}
 .actions-section a:link, .actions-section a:visited{
   color: #FFFFFF;
 }

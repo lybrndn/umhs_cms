@@ -19,6 +19,7 @@ a:hover, a:active {
 .body {
   margin: 0 auto; /* centers content */
   width: 90%; /* width was 100%, so make 85% container */
+  min-width: 1240px;
   clear: both; /* makes container in such a way there will be no floating content on left or right */
 }
 
@@ -84,112 +85,17 @@ a:hover, a:active {
   -webkit-border-radius: 5px;*/
 }
 
-.left-content {
-  width: 69%;
+.main-content {
+  width: 79%;
   float: left;
 }
 
-.right-content {
-  width: 29%;
+.side-content {
+  width: 19%;
   float: right;
-}
-
-/********** ACCOUNT SECTION **********/
-
-.account-section {
-  overflow: auto; /* height will adjust according to children */
-  background-color: #101010;
-  margin-top: 2%;
-  border: solid;
-  border-color: #800000;
-}
-.account-section a:link, .account-section a:visited {
-  color: #FFFFFF;
-}
-.account-section a:hover, .account-section a:active {
-  color: #0000FF;
-  border-bottom: 1px dotted #0000FF;
-}
-
-/********** ACCOUNT NAME BAR **********/
-
-.account-section .account-namebar {
-  padding: 2% 0 0 0;
-  height: 73px;
-}
-.account-section .account-namebar .account-photo {
-  float: left;
-  width: 85px;
-  padding-left: 2%;
-}
-.account-section .account-namebar .account-photo img,
-.account-section .account-namebar .account-photo .change-link {
-  width: inherit;
-  float: left;
-}
-.account-section .account-namebar .account-photo img {
-  padding-left: 2%;
-}
-.account-section .account-namebar .account-photo .change-link {
-  text-align: center;
-}
-.account-section .account-namebar .account-namebar-nameinfo {
-  height: 50px;
-  margin-top: 2%;
-  background-color: #800000;
-  border-top: solid;
-  border-bottom: solid;
-  border-color: #000000;
-}
-.account-section .account-namebar .account-namebar-nameinfo .display-name {
-  float: left;
-  font-size: 24px;
-  padding: 12px 0 0 2%;
-  color: #FFFFFF;
-}
-.account-section .account-namebar .account-namebar-nameinfo .change-link {
-  float: right;
-  padding: 12px 10% 0 0;
-}
-
-/********** ACCOUNT ITEMS **********/
-
-.account-section .account-info {
-  float: left;
-  padding-left: 4%;
-  width: 65%;
-  margin-bottom: 2%;
-}
-.account-section .account-info .account-info-item {
-  background-color: #800000;
-  border-bottom: solid;
-  border-left: solid;
-  border-right: solid;
-  border-radius: 5px;
-}
-.account-section .account-info .account-info-item .account-info-item-label {
-  float: left;
-  color: #808080;
-  padding: 0 0 0 3%;
-  width: 25%;
-  font-size: 15px;
-}
-.account-section .account-info .account-info-item .account-info-item-value {
-  float: left;
-  color: #FFFFFF;
-  width: 50%;
-  font-size: 15px;
 }
 
 .list-section { /* for lists like in students page and requests page */
-  overflow: auto;
-  background-color: #101010;
-  border: solid;
-  border-color: #800000;
-  margin-top: 10px;
-}
-
-.actions-section { /* mainly used to style actions section */
   overflow: auto;
   background-color: #101010;
   border: solid;
