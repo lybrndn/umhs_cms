@@ -1,1 +1,63 @@
-here is some text
+body {
+  background-color: #FFF;
+  font-size: 87.5%; /* base font size is 14px, 87.5% of 14 */
+  font-family: Times, 'Lucida Sans Unicode';
+  color: #800000;
+  line-height: 1.5;
+  text-align: left;
+  background-color: #001150;
+}
+
+#school-logo {
+  width: 25%;
+  height: auto;
+}
+
+.login-body {
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 60px 0 0;
+  width: 650px;
+  border: 5px solid;
+  border-radius: 5px;
+  background-color: #969696;
+}
+
+.login-label {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+}
+
+.login-forms {
+  text-align: center;
+}
+
+.sublogin-forms {
+  text-align: left;
+  margin: 0 auto;
+  width: 261.4px;
+}
+
+.userid-label, .pw-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#userid-box, #pw-box {
+  width: 100%;
+}
+
+#login-button {
+  margin: 20px auto;
+  width: 100%;
+  height: auto;
+  font-family: Times, 'Lucida Sans Unicode';
+  font-size: 15px;
+  color: #800000;
+}
+
+.logo {
+  text-align: center;
+}
