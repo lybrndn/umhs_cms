@@ -37,3 +37,45 @@
   border-radius: 5px;
   border-color: #000000;
 }
+
+
+.CurrAss-actions-section { /* mainly used to style actions section */
+ overflow: auto;
+ background-color: #101010;
+ border: solid;
+ border-radius: 5px;
+ border-color: #800000;
+ margin-top: 10px;
+}
+.CurrAss-actions-section a:link, .CurrAss-actions-section a:visited{
+ color: #FFFFFF;
+}
+.CurrAss-actions-section a:hover, .CurrAss-actions-section a:active {
+ color: #0000FF;
+}
+.CurrAss-actions-section .CurrAss-actions-section-label {
+ color: #FFFFFF;
+ font-size: 120%;
+ width: inherit;
+ text-align: center;
+ height: 25px;
+ padding: 3px 0;
+ border-bottom: solid;
+ border-color: #505050;
+}
+.CurrAss-actions-section .CurrAss-actions-section-links {
+ list-style: none;
+ padding: 0;
+ margin: auto;
+ margin-bottom: 2%;
+ width: 90%;
+}
+.CurrAss-actions-section .CurrAss-actions-section-links li {
+ text-align: center;
+ background-color: #800000;
+ border-left: solid;
+ border-bottom: solid;
+ border-right: solid;
+ border-radius: 5px;
+ border-color: #000000;
+}
