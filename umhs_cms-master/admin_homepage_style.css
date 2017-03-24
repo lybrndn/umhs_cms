@@ -1,0 +1,18 @@
+.clickables {
+  height: 40px;
+  width: 50%;
+  float: left;
+}
+.admin-view-indicator {
+  height: 40px;
+  width: 45%;
+  float: right;
+  color: #FFFFFF;
+  margin-right: 5%;
+}
+
+#admin-view-indicator-label {
+  float: right;
+  height: 20px;
+  padding: 10px;
+}

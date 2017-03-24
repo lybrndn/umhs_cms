@@ -1,0 +1,32 @@
+.list-section .top-bar {
+  height: 25px;
+  background-color: #101010;
+  color: #FFFFFF;
+  padding: 4px 0 2px 1%;
+  border-bottom: solid;
+  border-color: #505050;
+}
+.list-section .top-bar .select-all, .list-section .search,
+.list-section .counter {
+  float: left;
+}
+.list-section .top-bar .select-all {
+  width: 19%;
+}
+.list-section .top-bar .search-bar {
+  float: left;
+  height: 25px;
+  width: 60%;
+}
+.list-section .top-bar .search-bar img {
+  float: left;
+  width: auto;
+  height: inherit;
+}
+.list-section .top-bar .search-bar .search-input {
+  margin-left: 3px;
+}
+.list-section .top-bar .counter {
+  float: left;
+  width: 20%;
+}
