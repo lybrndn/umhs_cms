@@ -1,11 +1,11 @@
 body {
-  background-color: #FFF;
+  /*background-color: #FFFFFF;*/
   font-size: 87.5%; /* base font size is 14px, 87.5% of 14 */
   font-family: Times, 'Lucida Sans Unicode';
   color: #800000;
   line-height: 1.5;
   text-align: left;
-  background-color: #001150;
+  /*background-color: #001150;*/
 }
 
 #school-logo {
@@ -23,35 +23,40 @@ body {
   background-color: #969696;
 }
 
-.login-label {
+/*.login-label {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 35px;
-}
+}*/
 
-.login-forms {
+.assignment-form {
   text-align: center;
 }
 
-.sublogin-forms {
+.subassignment_creation-forms {
   text-align: left;
   margin: 0 auto;
-  width: 261.4px;
+  width: 50%;
 }
 
-.userid-label, .pw-label {
+.assignmentname-label, .duedate-label, .AssignmentDetails-label {
   font-size: 20px;
   font-weight: bold;
 }
 
-#userid-box, #pw-box {
-  width: 100%;
+#assignmentid-box, #DueDate-box {
+  width: 25%;
 }
 
-#login-button {
+#AssignmentDescription-box{
+	width: 50%;
+	height: 200px;
+}
+
+#submit-button {
   margin: 20px auto;
-  width: 100%;
+  width: 50%;
   height: auto;
   font-family: Times, 'Lucida Sans Unicode';
   font-size: 15px;

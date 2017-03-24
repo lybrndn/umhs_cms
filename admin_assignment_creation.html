@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="student_list_style.css" type="text/css" />
     <link rel="stylesheet" href="actions_section_style.css" type="text/css" />
     <link rel="stylesheet" href="admin_homepage_style.css" type="text/css" />
+	<link rel="stylesheet" href="Assignment_Creation_Form.css" type="text/css" />
 
     <!--<meta name="viewport" content="width=device-width, inital-scale=1.0" />   used to say that this is a responsive websites-->
   </head>
@@ -40,7 +41,7 @@
     </div>
 
 
-
+	<div class="all-content">
     <div class="side-content">
       <div class="actions-section">
         <div class="actions-section-label">
@@ -58,8 +59,11 @@
 
 
 
-	<div class="main-content">
-      <div class="CurrAss-actions-section">
+	<div class="assignment-creation-content"> <!-- need to change this -->
+
+
+
+     <!-- <div class="CurrAss-actions-section">
         <div class="CurrAss-actions-section-label">
           <span>Current Assignments</span>
         </div>
@@ -69,7 +73,34 @@
           <li><a href="#">Assignment 3</a></li>
         </ul>
      </div> <!-- END of side-content -->
+
+	 <div class="assignment-form">
+          <form name="MY Form"action="Login">
+            <div class="subassignment_creation-forms">
+              <span class="assignmentname-label">Assignment Name:</span>
+              <br>
+              <input id="assignmentid-box" type="text" name="Assignmentname-Text">
+              <br>
+              <span class="duedate-label">Due Date:</span>
+              <br>
+              <input id="DueDate-box" type="Text" name="Due Date Data">
+			  <br>
+			  <span class="AssignmentDetails-label">Assignment Description:</span>
+              <br>
+              <textarea id="AssignmentDescription-box" col="40" rows="5" type="text" name="Assignment Data"></textarea>
+              <input id="submit-button" type="submit" name="button1" value="Post Assignment">
+          </div>
+          </form>
+
+      </div>
+
+
+
+
+
 	</div>
+	</div>
+
 
 
 

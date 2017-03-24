@@ -37,7 +37,7 @@ body {
 .subassignment_creation-forms {
   text-align: left;
   margin: 0 auto;
-  width: 75%;
+  width: 50%;
 }
 
 .assignmentname-label, .duedate-label, .AssignmentDetails-label {
