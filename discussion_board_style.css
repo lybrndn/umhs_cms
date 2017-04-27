@@ -33,11 +33,12 @@
 .thread-list-item {
   background-color: #800000;
   color: #FFFFFF;
-  height: 30px;
+  min-height: 30px;
   margin: 0 auto;
   padding: 1% 0;
   border-bottom: solid;
   border-color: #000000;
+  overflow: auto;
 }
 .thread-list-item form {
   float: left;
@@ -47,4 +48,12 @@
 }
 .thread-item-title {
    margin-left: 15px;
+   float: left;
+}
+
+.thread-list-item-info a:link, .thread-list-item-info a:visited {
+  color: #8080FF;
+}
+.thread-list-item-info a:hover, .thread-list-item-info a:active {
+  color: #0000FF;
 }
