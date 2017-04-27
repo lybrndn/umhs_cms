@@ -1,0 +1,50 @@
+.main-content {
+  float: right;
+}
+.side-content { /* actions section on left side more convenient */
+  float: left;
+}
+.thread-list {
+  margin-bottom: 2%;
+}
+.thread-list-title {
+   color: #FFFFFF;
+}
+.forum-label, .description-label, .total-posts-label,
+.thread-item-title,  .thread-item-desc, .thread-item-posts {
+   display: inline-block;
+}
+.forum-label, .thread-item-title {
+   width: 30%;
+}
+.forum-label {
+   margin-left: 35px;
+   width: 30%;
+}
+.description-label, .thread-item-desc {
+   width: 50%;
+}
+.total-posts-label, .thread-item-posts {
+   float: right;
+   margin-right: 20px;
+}
+
+
+.thread-list-item {
+  background-color: #800000;
+  color: #FFFFFF;
+  height: 30px;
+  margin: 0 auto;
+  padding: 1% 0;
+  border-bottom: solid;
+  border-color: #000000;
+}
+.thread-list-item form {
+  float: left;
+}
+.thread-list-item-info {
+  height: inherit;
+}
+.thread-item-title {
+   margin-left: 15px;
+}
