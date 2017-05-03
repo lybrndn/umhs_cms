@@ -1,0 +1,196 @@
+/*Basics*/
+html, body {
+	margin: 0;
+	font-family: "Helvitca Neue", Helvetica, sans-serif;
+	color: #444; /* lightish black */
+	-webkit-font-smoothing: antialiased;
+	background: #f2f0e9; /* greyish */
+}
+#login-content {
+	/* centers horizontally based on width */
+	width: 440px;
+	margin: 0 auto;
+
+	margin-top: 3%;
+	overflow: auto;
+
+	/* brings top left corner to the center
+	top: 50%;
+	left: 50%;
+
+	/* centers the content
+	/* half of width and height
+	margin-left: -215px;
+	margin-top: -400px;  */
+}
+#login-title {
+	margin-bottom: 20px;
+}
+#login-welcome, #school-name {
+	margin: 0;
+}
+#login-welcome {
+	font-size: 22px;
+}
+#school-name {
+	font-size: 40px;
+}
+
+#login-container {
+	overflow: auto;
+	border: 1px solid #ccc; /* thickness type color */
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* LOGIN FORM */
+#login-form-side {
+	float: left;
+	width: 81px;
+	height: 286px;
+	padding: 8px;
+	background: url("../images/school.png") no-repeat;
+	background-position: -575px -150px;
+}
+#login-form-side img {
+	width: inherit;
+	height: auto;
+}
+
+#login-form {
+	float: left;
+	background: #fff;
+	overflow: auto;
+	width: 340px;
+
+	/* pixels go: left-right-position top-bot-position blurriness color */
+}
+
+form {
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+label {
+	color: #555; /* even lighter black */
+	display: inline-block;
+	margin-left: 18px;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+p a {
+	font-size: 11px;
+	color: #aaa;
+	float: right;
+	margin-top: -13px;
+	margin-right: 20px;
+
+	/* transitions */
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	transition: all .4s ease;
+}
+p a:hover {
+	color: #555;
+}
+input {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12px;
+	outline: none;
+}
+input[type=text], input[type=password] {
+	color: #777;
+	padding-left: 10px;
+	margin: 10px;
+	margin-top: 12px;
+	margin-left: 18px;
+	width: 290px;
+	height: 35px;
+	border: 1px solid #c7d0d2;
+	border-radius: 2px;
+
+	/* 2 shadows, first is inside (inset) the box, second is outside */
+	/* pixels go: left-right-position top-bot-position blurriness */
+	box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, 0.4), 0 0 0 5px #f5f7f8;
+
+	/* transitions */
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+#login-bottom {
+	background: #ecf2f5;
+	width: 100%;
+	height: 84px;
+	margin-top: 20px;
+}
+#login-buttons {
+	display: block;
+	overflow: auto;
+	margin-left: 10px;
+	padding-top: 10px;
+}
+input[type=submit], input[type=button] {
+	float: left;
+	width: 80px;
+	margin: 5px;
+	height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #acd6ef;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+	background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+	background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+	border-radius: 5px;
+	border: 1px solid #66add6;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+#register-button {
+	color: #2c517b;
+	border: 1px solid #b7d4ec;
+	background: #ffffff;
+	background: -webkit-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+	background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+	background: linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+}
+input[type=text]:hover, input[type=password]:hover {
+	border: 1px solid #b6bfc0;
+	box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, 0.7), 0 0 0 5px #f5f7f8;
+}
+input[type=text]:focus, input[type=password]:focus {
+	border: 1px solid #a8c9e4;
+	box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, 0.7), 0 0 0 5px #e6f2f9;
+}
+input[type=submit]:hover, input[type=button]:hover {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+	background-image: -moz-linear-gradient(top left 90 deg, #b6e2ff 0%, #6ec2e8 100%);
+	background-image: linear-gradient(top left 90 deg, #b6e2ff 0%, #6ec2e8 100%);
+}
+input[type=submit]:active, input[type=button]:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
+	background-image: -moz-linear-gradient(top left 90 deg, #6ec2e8 0%, #b6e2ff 100%);
+	background-image: linear-gradient(top left 90 deg, #6ec2e8 0%, #b6e2ff 100%);
+}
+#register-button:hover {
+	color: #667788;
+	background: #b7d4ec;
+}
+
+#login-links {
+	display: block;
+	margin-left: 30px;
+}
+#forgot-pw {
+	text-decoration: none;
+	font-size: 11px;
+}
+#forgot-pw:hover {
+	color: #667788;
+}
+
+.check {
+	margin-left: 3px;
+}

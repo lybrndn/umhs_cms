@@ -1,0 +1,63 @@
+a {
+   text-decoration: none;
+}
+
+.content.folder .item {
+   min-width: 30em;
+   max-width: 65em;
+   margin: 4em auto;
+   padding: 3em;
+   font: message-box;
+}
+
+h1 {
+   font-size: 160%;
+   margin: 0 0 .6em;
+   border-bottom: 1px solid #8b0000;
+}
+
+.up::before {
+   margin-inline-end: 4px;
+   vertical-align: middle;
+   content: url(../icons/up.png);
+}
+p {
+   font-size: 110%;
+}
+#uplevel {
+   margin-top: 0;
+   float: left;
+}
+
+table {
+   clear: both;
+   width: 90%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+}
+
+thead {
+   font-size: 130%;
+}
+
+th:first-child {
+   width: 70%;
+}
+th {
+   text-align: start;
+}
+
+th:hover > a {
+   text-decoration: underline;
+}
+th > a {
+   color: inherit;
+}
+
+.dir::before {
+   margin-inline-end: 4px;
+   max-width: 16px;
+   max-height: 16px;
+   vertical-align: middle;
+   content: url(../icons/folder.png);
+}

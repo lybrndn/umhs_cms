@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Login - Union Mine High School</title>
+      <meta content = "text/html; charset=utf-8">
+
+      <link rel="stylesheet" href="./styles/login.css">
+      <link rel="stylesheet" href="./styles/styles.css">
+   </head>
+
+   <body>
+
+      <!-- start of nav-bar -->
+      <div class="nav-bar">
+	 <div class="nav-left">
+	    <a href="http://umhs.eduhsd.k12.ca.us/index.html" target="_blank" class="nav-left-button">
+	       <img src="./images/umhs_logo.png">
+	    </a>
+	    <span class="umhs">Union Mine High School</span>
+	    <span class="line"></span> 
+	    <span class="page-label">Course Management System</span>
+	 </div>
+	 <div class="nav-right">
+	    <span class="line"></span> 
+	    <a class="nav-right-link" href="register.html">Sign-up</a>
+	 </div>
+      </div> 
+      <!-- end of nav-bar -->
+
+      <div id="login-content">
+	 <div id="login-title">
+	    <p id="login-welcome">Welcome to </p>
+	    <p id="school-name">Union Mine High School</p>
+	 </div>
+
+	 <div id="login-container">
+	    <div id="login-form-side">
+	       <img src="./images/umhs_logo.png">
+	    </div>
+	    <div id="login-form">
+	       <form action="homepage.html">
+		  <label for="username">Username:</label>
+		  <input type="text" id="username" name="username">
+		  <label for "password">Password:</label>
+		  <input type="password" id="password" name="password">
+		  <div id="login-bottom">
+		     <div id="login-buttons">
+			<input type="submit" value="Login">
+			<input id="register-button" type="button" onclick="location.href='register.html';" value="Register">
+		     </div>
+		     <div id="login-links">
+			<a id="forgot-pw" href="#">Forgot Password?</a>
+		     </div>
+		  </div> <!-- /login-bottom -->
+	       </form>
+	    </div> <!-- /login-form -->
+	 </div> <!-- /login-container -->
+      </div> <!-- /login-content -->
+   </body>
+
+</html>

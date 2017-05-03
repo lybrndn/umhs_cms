@@ -1,0 +1,27 @@
+.content.account .item {
+   min-height: 30px;
+   display: flex;
+   align-items: center;
+   margin-bottom: 5px;
+}
+.content.account img {
+   display: block;
+   height: 200px;
+   width: auto;
+   margin: 0 auto 20px;
+}
+.content.account .left {
+   float: left;
+   width: 25%;
+}
+.content.account .center {
+   float: left;
+   width: 50%;
+   text-align: center;
+}
+.content.account .right {
+   float: right;
+   padding: 0;
+   text-align: right;
+   width: 24%;
+}

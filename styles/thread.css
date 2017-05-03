@@ -1,0 +1,9 @@
+.content.thread .item.large {
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.content.thread .question,
+.content.thread .question .item.large{
+   width: 100%;
+}

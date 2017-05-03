@@ -1,0 +1,47 @@
+.content.student .item {
+   display: block;
+   margin: 0 auto;
+   width: 75%;
+   margin-bottom: 10px;
+   overflow: auto;
+   min-height: 50px;
+}
+.content.student .item.actions {
+   display: flex;
+   align-items: center;
+   padding-right: 15px;
+}
+.content.student .item.actions span {
+   display: inline-block;
+   width: 50%;
+}
+.content.student .item.actions input[type="checkbox"] {
+}
+.content.student .item input[type="checkbox"] {
+   margin-left: 10px;
+}
+.content.student .item label {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+.content.student .item .label {
+   display: inline-block;
+   border: 0;
+   padding: 0;
+   width: 40%;
+}
+.content.student .item img {
+   float: left;
+   height: 40px;
+   padding: 0 10px;
+}
+.content.student .item .name {
+   padding: 0;
+   min-height: 50px;
+   display: flex;
+   align-items: center;
+}
+.content.student .label.right {
+   text-align: right;
+}
