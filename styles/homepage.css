@@ -1,3 +1,13 @@
+.content .item .footer {
+   overflow: auto;
+   margin: 0 auto;
+   width: 90%;
+} 
+.content .item .footer .left {
+   width: auto;
+   font-size: 11px;
+} 
+
 .content .item.large .footer.discussion {
    clear: both;
    text-align: right;

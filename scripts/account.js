@@ -19,7 +19,7 @@ function start_adminView() {
    document.getElementById('full-name').textContent = 'Professor Mackey';
    document.getElementById('first-name').textContent = 'David';
    document.getElementById('last-name').textContent = 'Mackey';
-   document.getElementById('e-mail').textContent = 'mackeyd@gmail.com';
+   document.getElementById('e-mail').textContent = 'mackeyd@umhs.edu';
 }
 
 function checkAccount() {
