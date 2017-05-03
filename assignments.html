@@ -34,7 +34,7 @@
 	    <ul>
 	       <li><a href="homepage.html">Home</a></li>
 	       <li class="active-menu"><a href="assignments.html">Assignments</a></li>
-	       <li><a href="students.html">Students</a></li>
+	       <li id="students-link"><a href="students.html">Students</a></li>
 	       <li><a href="discussion.html">Discussion</a></li>
 	       <li><a href="email.html">Email</a></li>
 	       <li><a href="folder.html">Folder</a></li>
@@ -45,8 +45,10 @@
 
       <!-- start content -->
       <div class="content">
-	 <div class="item large">
-	    <span class="label"><input name="name-field" placeholder="Post an Assignment..." type="text"></span>
+	 <div class="item large" id="post-assignment">
+	    <span class="label">
+	       <input name="name-field" placeholder="Post an Assignment..." type="text">
+	    </span>
 	    <span class="middle">
 	       <textarea name="name-field" placeholder="Add a description..." type="text"></textarea>
 	       <div style="display: block">
@@ -78,6 +80,8 @@
 	 </div>
       </div>
       <!-- end content -->
+
+      <script src="./scripts/assignments.js"></script>
 
    </body>
 

@@ -35,7 +35,7 @@
 	    <ul>
 	       <li><a href="homepage.html">Home</a></li>
 	       <li><a href="assignments.html">Assignments</a></li>
-	       <li><a href="students.html">Students</a></li>
+	       <li id="students-link"><a href="students.html">Students</a></li>
 	       <li><a href="discussion.html">Discussion</a></li>
 	       <li><a href="email.html">Email</a></li>
 	       <li class="active-menu"><a href="folder.html">Folder</a></li>
@@ -45,8 +45,8 @@
       </div>
 
       <div class="content folder">
-	 <div class="item">
-	    <h1>Index of "Derrick Sung's student folder"</h1>
+	 <div class="item directory">
+	    <h1>Index of <span style="display: inline" id="folder-owner">Derrick Sung's student folder</span></h1>
 	    <p id="up-level"><a class="up" href="#">Up one level</a></p>
 	    <!-- contents of folder -->
 	    <table order="">
@@ -77,10 +77,30 @@
 	    </table>
 	    <!-- end contents of folder -->
 	    <div class="footer">
-	       <span><a href="">Download Folder</a></span>
+	       <span class="right"><a href="">Download Folder</a></span>
 	    </div>
 	 </div>
+
+	 <div class="item large upload">
+	    <span class="label">
+	       File Upload
+	    </span>
+	    <span class="middle">
+	       <div style="display: block">
+		  File to upload to current folder:
+		  <input type="file" name="instructions">
+	       </div>
+	    </span>
+	    <div class="footer">
+	       <span class="left" id="date">Date: </span>
+	       <span class="right"><input type="submit" value="Upload"></span>
+	    </div>
+	 </div>
+
       </div>
+
+      <script src="./scripts/folder.js"></script>
+      <script src="./scripts/date.js"></script>
 
    </body>
 
