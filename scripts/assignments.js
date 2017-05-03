@@ -8,4 +8,12 @@ function start_adminView() {
    document.getElementById('post-assignment').style.display = 'block';
 }
 
-start_adminView();
+function checkAccount() {
+   if (sessionStorage.admin == 'true') {
+      start_adminView();
+   } else {
+      start_studentView();
+   }
+}
+
+checkAccount();

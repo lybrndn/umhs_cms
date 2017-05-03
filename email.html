@@ -35,7 +35,7 @@
 	    <ul>
 	       <li><a href="homepage.html">Home</a></li>
 	       <li><a href="assignments.html">Assignments</a></li>
-	       <li><a href="students.html">Students</a></li>
+	       <li id="students-link"><a href="students.html">Students</a></li>
 	       <li><a href="discussion.html">Discussion</a></li>
 	       <li class="active-menu"><a href="email.html">Email</a></li>
 	       <li><a href="folder.html">Folder</a></li>
@@ -62,14 +62,14 @@
 	 </div>
 	 <!--  end inbox actions -->
 	 <div class="item large">
-	    <span class="label"><a href="#">Midterm Question</a></span>
-	    <span class="middle">Can you please email me a digital version of the second midterm that we will be writing tomorrow? I have seen the practice one outside your office, however I fear that the questions on there will not be the exact questions tomorrow. And there is no reason to practice questions that are not going to be on the midterm, might as well practice the exact ones. Thank you in advance.</span>
+	    <span class="label"><a href="#" id="dis-topic">Midterm Question</a></span>
+	    <span class="middle" id="dis-msg">Can you please email me a digital version of the second midterm that we will be writing tomorrow? I have seen the practice one outside your office, however I fear that the questions on there will not be the exact questions tomorrow. And there is no reason to practice questions that are not going to be on the midterm, might as well practice the exact ones. Thank you in advance.</span>
 	    <div class="footer">
 	       <span class="left">Date Received: 5/1/2017</span>
 	       <span class="right"><button type="button">Delete</button></span>
 	    </div>
 	 </div>
-	 <div class="item large">
+	 <div class="item large" id="dat-msg">
 	    <span class="label"><a href="#">Yo Do</a></span>
 	    <span class="middle">I missed class yesterday. What we do? Chris.</span>
 	    <div class="footer">
@@ -101,7 +101,8 @@
 
       </div>
 
-      <script src="./scripts/discussion.js"></script>
+      <script src="./scripts/email.js"></script>
+      <script src="./scripts/date.js"></script>
 
    </body>
 
