@@ -16,6 +16,8 @@ del.appendChild(delText);
 cancel.appendChild(cancelText);
 del.setAttribute('onclick','deleteAssignment()');
 cancel.setAttribute('onclick','cancelMsgBox()');
+del.setAttribute('class','msgButton');
+cancel.setAttribute('class','msgButton');
 
 panel.appendChild(cancel);
 panel.appendChild(del);
@@ -41,11 +43,19 @@ function dim(bool) {
 function start_studentView() {
    document.getElementById('students-link').style.display = 'none';
    document.getElementById('post-assignment').style.display = 'none';
+   var buttons = document.getElementsByClassName('delButton');
+   for (var i = 0; i < buttons.length; i++) {
+      buttons[i].style.display = 'none';
+   }
 }
 
 function start_adminView() {
    document.getElementById('students-link').style.display = 'inline-block';
    document.getElementById('post-assignment').style.display = 'block';
+   var buttons = document.getElementsByClassName('delButton');
+   for (var i = 0; i < buttons.length; i++) {
+      buttons[i].style.display = 'inline';
+   }
 }
 
 function checkAccount() {
