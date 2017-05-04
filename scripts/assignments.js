@@ -22,6 +22,10 @@ cancel.setAttribute('class','msgButton');
 panel.appendChild(cancel);
 panel.appendChild(del);
 
+var dimDiv = document.createElement('div');
+dimDiv.setAttribute('id', 'dimmer');
+html.appendChild(dimDiv);
+
 function confirmDelete() {
    html.appendChild(panel);
    dim(true);
