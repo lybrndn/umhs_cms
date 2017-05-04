@@ -64,6 +64,31 @@ th > a {
 }
 
 .content.folder .item.large.upload {
-   width: 80%;
+   min-width: 25em;
+   max-width: 50em;
    margin: 0 auto;
 }
+
+.content.folder .item.directory input[type="checkbox"],
+#selectall-label {
+   display: none;
+   float: left;
+   margin-right: 8px;
+}
+
+#cancel-link {
+   display: none;
+   margin: 0;
+   padding: 0;
+   margin-top: 10px;
+}
+
+.file {
+   display: none;
+   float: left;
+}
+
+#readme {
+   display: none;
+}
+

@@ -1,4 +1,4 @@
-var date = document.querySelector('#date');
+var dates = document.getElementsByClassName('date');
 
 var today = new Date();
 var month = today.getMonth() + 1;
@@ -7,4 +7,6 @@ var year = today.getFullYear();
 
 today = month + "/" + day + "/" + year;
 
-date.textContent= "Date: " + today;
+for (var i = 0; i < dates.length; i++) {
+   dates[i].textContent = today;
+}

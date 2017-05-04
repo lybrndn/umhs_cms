@@ -6,6 +6,43 @@ html, body {
    -webkit-font-smoothing: antialiased;
    background: #f2f0e9; /* greyish */
 }
+#dimmer {
+   background: #000;
+   opacity: 0.5;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: none;
+   z-index: 50; /* may be unecessary */
+}
+
+.msgBox {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 600px;
+   background-color: #ffffff;
+   border: 1px solid #cccccc;
+   z-index: 100; /* appear on top of things */
+}
+.msgBox p {
+   line-height: 1.5;
+   padding: 10px 20px;
+   color: #444;
+   padding-left: 82px;
+   background-position: 25px center;
+   background-image: url("../icons/warning.png");
+   background-repeat: no-repeat;
+}
+.msgBox button {
+   float: right;
+   margin-right: 50px;
+   margin-bottom: 10px;
+}
+
 .header-menu {
    display: block;
    width: 100%;
@@ -150,6 +187,9 @@ html, body {
    display: block;
    margin: 0 auto;
    width: 90%;
+}
+.content .item .date {
+   display: inline;
 }
 
 .content .item .label {

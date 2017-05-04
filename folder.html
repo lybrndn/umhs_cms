@@ -47,7 +47,7 @@
       <div class="content folder">
 	 <div class="item directory">
 	    <h1>Index of <span style="display: inline" id="folder-owner">Derrick Sung's student folder</span></h1>
-	    <p id="up-level"><a class="up" href="#">Up one level</a></p>
+	    <p id="up-level"><a class="up" href="#" onclick="viewHomeDir(); hideCheckboxes();">Up one level</a></p>
 	    <!-- contents of folder -->
 	    <table order="">
 	       <thead>
@@ -59,25 +59,53 @@
 	       </thead>
 	       <tbody>
 		  <tr>
-		     <td><a class="dir" href="">homework</a></td>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="dir" href="">homework</a>
+			<a class="file" href="">j-pup sluggers directions.pdf</a>
+		     </td>
 		     <td>Unknown</td>
 		     <td>5/1/2017</td>
 		  </tr>
 		  <tr>
-		     <td><a class="dir" href="">handouts</a></td>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="dir" href="#" onclick="viewHandoutsDir(); hideCheckboxes();">handouts</a>
+			<a class="file" href="#">ss1 directions.pdf</a>
+		     </td>
 		     <td>Unknown</td>
 		     <td>4/27/2017</td>
 		  </tr>
 		  <tr>
-		     <td><a class="file" href="">readme.txt</a>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="dir" href="">documents</a>
+			<a class="file" href="">ss2 new directions.pdf</a>
+		     </td>
 		     <td>Unknown</td>
 		     <td>3/5/2017</td>
+		  </tr>
+		  <tr id="readme">
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="file" href="">readme.txt</a>
+		     </td>
+		     <td>Unknown</td>
+		     <td class="date">Unknown</td>
+		  </tr>
+		  <tr><td>...<td></tr>
+		  <tr>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox" id="selectall" onclick="selectAll();"></form>
+			<label for="selectall" id="selectall-label">Select All</label>
+		     </td>
 		  </tr>
 	       </tbody>
 	    </table>
 	    <!-- end contents of folder -->
 	    <div class="footer">
-	       <span class="right"><a href="">Download Folder</a></span>
+	       <span class="right"><a id="download-link" href="#" onclick="viewCheckboxes()">Download</a></span>
+	       <span class="right"><a id="cancel-link" href="#" onclick="hideCheckboxes()">Cancel</a></span>
 	    </div>
 	 </div>
 
@@ -92,8 +120,8 @@
 	       </div>
 	    </span>
 	    <div class="footer">
-	       <span class="left" id="date">Date: </span>
-	       <span class="right"><input type="submit" value="Upload"></span>
+	       <span class="left">Date: <span class="date">Unknown</span></span>
+	       <span class="right"><input type="submit" value="Upload" onclick="uploadReadme();"></span>
 	    </div>
 	 </div>
 
