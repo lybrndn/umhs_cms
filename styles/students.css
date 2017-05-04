@@ -45,3 +45,10 @@
 .content.student .label.right {
    text-align: right;
 }
+
+.content.account.view-student-info {
+   display: none;
+}
+.content.folder.view-student-folder {
+   display: none;
+}

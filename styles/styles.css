@@ -259,3 +259,7 @@ html, body {
    min-height: 50px;
    padding: 0 15px;
 }
+
+#author {
+   display: inline;
+}

@@ -7,7 +7,9 @@
       <link rel="icon" href="images/umhs_logo.png">
       <meta charset="utf-8">
 
+      <link rel="stylesheet" href="./styles/folder.css">
       <link rel="stylesheet" href="./styles/students.css">
+      <link rel="stylesheet" href="./styles/account.css">
       <link rel="stylesheet" href="./styles/styles.css">
    </head>
 
@@ -128,6 +130,103 @@
       </div>
       <!-- end content -->
 
+      <!-- start view student -->
+      <div class="content account view-student-info">
+	 <span class="title" id="full-name">Derrick Sung</span>
+	 <img src="./images/avatar.png">
+	 <!-- account info -->
+	 <div class="item">
+	    <div class="left"><span>First Name</span></div>
+	    <div class="center"><span id="first-name">Derrick</span></div>
+	    <div class="right"><span><a href="">Change</a></span></div>
+	 </div>
+	 <div class="item">
+	    <div class="left"><span>Last Name</span></div>
+	    <div class="center"><span id="last-name">Sung</span></div>
+	    <div class="right"><span><a href="">Change</a></span></div>
+	 </div>
+	 <div class="item">
+	    <div class="left"><span>Email</span></div>
+	    <div class="center"><span id="e-mail">sungd@gmail.com</span></div>
+	    <div class="right"><span><a href="">Change</a></span></div>
+	 </div>
+	 <div class="item">
+	    <div class="left"><span>Password</span></div>
+	    <div class="center"><span>********</span></div>
+	    <div class="right"><span><a href="" class="change-link">Change</a></span></div>
+	 </div>
+	 <!-- end student list -->
+      </div>
+      <!-- end view student -->
+
+      <!-- start view student folder -->
+      <div class="content folder view-student-folder">
+	 <div class="item directory">
+	    <h1>Index of <span style="display: inline" id="folder-owner">Derrick Sung's student folder</span></h1>
+	    <p id="up-level"><a class="up" href="#" onclick="viewHomeDir(); hideCheckboxes();">Up one level</a></p>
+	    <!-- contents of folder -->
+	    <table order="">
+	       <thead>
+		  <tr>
+		     <th><a href="">Name</a></th>
+		     <th><a href="">Size</a></th>
+		     <th><a href="">Last Modified</a></th>
+		  </tr>
+	       </thead>
+	       <tbody>
+		  <tr>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="dir" href="">homework</a>
+			<a class="file" href="">j-pup sluggers directions.pdf</a>
+		     </td>
+		     <td>Unknown</td>
+		     <td>5/1/2017</td>
+		  </tr>
+		  <tr>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="dir" href="#" onclick="viewHandoutsDir(); hideCheckboxes();">handouts</a>
+			<a class="file" href="#">ss1 directions.pdf</a>
+		     </td>
+		     <td>Unknown</td>
+		     <td>4/27/2017</td>
+		  </tr>
+		  <tr>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="dir" href="">documents</a>
+			<a class="file" href="">ss2 new directions.pdf</a>
+		     </td>
+		     <td>Unknown</td>
+		     <td>3/5/2017</td>
+		  </tr>
+		  <tr id="readme">
+		     <td>
+			<form><input type="checkbox" name="item-checkbox"></form>
+			<a class="file" href="">readme.txt</a>
+		     </td>
+		     <td>Unknown</td>
+		     <td class="date">Unknown</td>
+		  </tr>
+		  <tr><td>...<td></tr>
+		  <tr>
+		     <td>
+			<form><input type="checkbox" name="item-checkbox" id="selectall" onclick="selectAll();"></form>
+			<label for="selectall" id="selectall-label">Select All</label>
+		     </td>
+		  </tr>
+	       </tbody>
+	    </table>
+	    <!-- end contents of folder -->
+	    <div class="footer">
+	       <span class="right"><a id="download-link" href="#" onclick="viewCheckboxes()">Download</a></span>
+	       <span class="right"><a id="cancel-link" href="#" onclick="hideCheckboxes()">Cancel</a></span>
+	    </div>
+	 </div>
+	 <!-- end view student folder -->
+
+      <script src="./scripts/folder.js"></script>
       <script src="./scripts/students.js"></script>
 
    </body>

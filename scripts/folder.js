@@ -1,3 +1,5 @@
+var uploaded = false;
+
 function viewHomeDir() {
    var directories = document.getElementsByClassName('dir');
    var files = document.getElementsByClassName('file');
@@ -6,6 +8,9 @@ function viewHomeDir() {
    }
    for (var i = 0; i < files.length; i++) {
       files[i].style.display = 'none';
+   }
+   if (uploaded) {
+      document.getElementById('readme').style.display = 'none';
    }
 }
 
@@ -17,6 +22,9 @@ function viewHandoutsDir() {
    }
    for (var i = 0; i < files.length; i++) {
       files[i].style.display = 'inline';
+   }
+   if (uploaded) {
+      document.getElementById('readme').style.display = 'table-row';
    }
 }
 
@@ -58,6 +66,7 @@ function selectAll() {
 
 function uploadReadme() {
    document.getElementById('readme').style.display = 'table-row';
+   uploaded = true;
 }
 
 function start_studentView() {

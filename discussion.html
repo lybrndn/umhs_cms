@@ -44,40 +44,71 @@
 	 <!-- end menu -->
       </div>
 
-      <div class="content">
-	 <div class="item large">
-	    <span class="label"><input name="name-field" placeholder="Create a Thread Topic..." type="text"></span>
+      <div class="content discussion">
+	 <div class="board">
+	    <div class="item large">
+	       <span class="label"><input name="name-field" placeholder="Create a Thread Topic..." type="text"></span>
+	       <span class="middle">
+		  <textarea name="name-field" placeholder="Add a description..." type="text"></textarea>
+		  <div style="display: block">
+		     Attach supplementary file(s):
+		     <input type="file" name="instructions">
+		  </div>
+	       </span>
+	       <div class="footer">
+		  <span class="left">Date: <span class="date">Unknown</span></span>
+		  <span class="right"><input type="submit" value="Post"></span>
+	       </div>
+	    </div>
+	    <span class="title">Recent Threads</span>
+	    <div class="item large">
+	       <span class="label"><a href="thread.html">Week 2 - What is a good discussion question?</a></span>
+	       <span class="middle">A good question is both a question that your fellow students can answer and a question that requires analysis, synthesis, interpretation, and critical thinking in order to answer it. Your questions based on a particular passage should both encourage and challenge us to articulate and uncover meaning in the text.</span>
+	       <span class="middle author">Author: David Mackey</span>
+	       <div class="footer">
+		  <span class="left">Date Posted: 5/1/2017</span>
+		  <span class="right">Total Replies: 0</span>
+	       </div>
+	    </div>
+	 </div>
+	 <div class="item large" id="single-thread">
+	    <span class="label"><a href="#" onclick="viewSingleThread();">MLA Format or Chicago?</a></span>
+	    <span class="middle">For our first assignment, what format do we use?</span>
+	    <span class="middle author">Author: Brendan Ly</span>
+	    <div class="footer">
+	       <span class="left">Date Posted: 5/1/2017</span>
+	       <span class="right">Total Replies: 1</span>
+	    </div>
+	 </div>
+
+	 <!-- single thread view -->
+	 <span class="title reply">Recent Replies</span>
+	 <div class="item large reply">
+	    <span class="label"><a href="#">RE: MLA Format or Chicago?</a></span>
+	    <span class="middle">I'm pretty sure the professor said it was to be in MLA format.</span>
+	    <span class="middle author">Author: Kc Kaku</span>
+	    <div class="footer">
+	       <span class="left">Date Posted: 5/1/2017</span>
+	    </div>
+	 </div>
+	 <!-- new reply -->
+	 <div class="item large reply">
+	    <span class="label"><input name="name-field" placeholder="Enter reply title..." type="text"></span>
 	    <span class="middle">
-	       <textarea name="name-field" placeholder="Add a description..." type="text"></textarea>
+	       <textarea name="name-field" placeholder="Enter reply..." type="text"></textarea>
 	       <div style="display: block">
 		  Attach supplementary file(s):
 		  <input type="file" name="instructions">
 	       </div>
 	    </span>
 	    <div class="footer">
-	       <span class="left">Date: <span class="date">Unknown</span></span>
+	       <span class="left">Author: <span id="author">David Mackey</span></span>
 	       <span class="right"><input type="submit" value="Post"></span>
 	    </div>
 	 </div>
-	 <span class="title">Recent Threads</span>
-	 <div class="item large">
-	    <span class="label"><a href="thread.html">Week 2 - What is a good discussion question?</a></span>
-	    <span class="middle">A good question is both a question that your fellow students can answer and a question that requires analysis, synthesis, interpretation, and critical thinking in order to answer it. Your questions based on a particular passage should both encourage and challenge us to articulate and uncover meaning in the text.</span>
-	    <span class="middle author">Author: David Mackey</span>
-	    <div class="footer">
-	       <span class="left">Date Posted: 5/1/2017</span>
-	       <span class="right">Total Replies: 1</span>
-	    </div>
-	 </div>
-	 <div class="item large">
-	    <span class="label"><a href="#">MLA Format or Chicago?</a></span>
-	    <span class="middle">For our first assignment, what format do we use?</span>
-	    <span class="middle author">Author: Brendan Ly</span>
-	    <div class="footer">
-	       <span class="left">Date Posted: 5/1/2017</span>
-	       <span class="right">Total Replies: 0</span>
-	    </div>
-	 </div>
+	 <!-- end new reply -->
+
+	 <!-- end single thread view -->
       </div>
 
       <script src="./scripts/discussion.js"></script>

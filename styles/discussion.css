@@ -1,3 +1,13 @@
 .content .item.large .middle.author {
    padding: 0;
 }
+
+.content.discussion .item.large.reply,
+.content.discussion .title.reply {
+   display: none;
+}
+
+.content.discussion .item.large.reply {
+   width: 95%;
+   margin: 10px auto;
+}
